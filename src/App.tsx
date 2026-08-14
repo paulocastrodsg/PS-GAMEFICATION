@@ -70,7 +70,7 @@ export default function App() {
   const [prestadorLogado, setPrestadorLogado] = useState(prestadores[0].id);
   const [novoPrestador, setNovoPrestador] = useState({ nome: "", regiao: "" });
 
-  const [novoKpi, setNovoKpi] = useState({});
+  const [novoKpi, setNovoKpi] = useState<{ [key: string]: any }>({});
   const [csvMes, setCsvMes] = useState(MESES[MESES.length - 1]);
   const [csvTexto, setCsvTexto] = useState("");
   const [csvResultado, setCsvResultado] = useState(null);
